@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="door" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#2a190e"/><stop offset="1" stop-color="#3d2616"/></linearGradient>
+    <radialGradient id="lamp" cx="85%" cy="40%" r="70%"><stop offset="0" stop-color="#ffcf86" stop-opacity="0.35"/><stop offset="1" stop-color="#000" stop-opacity="0.6"/></radialGradient>
+    <linearGradient id="brass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f0cf86"/><stop offset="0.5" stop-color="#b8893a"/><stop offset="1" stop-color="#6b4a1c"/></linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="#120c08"/>
+  <!-- door leaf -->
+  <rect x="120" y="0" width="1060" height="900" fill="url(#door)"/>
+  <g fill="none" stroke="#1e1209" stroke-width="10"><rect x="200" y="60" width="400" height="320"/><rect x="700" y="60" width="400" height="320"/><rect x="200" y="520" width="400" height="340"/><rect x="700" y="520" width="400" height="340"/></g>
+  <!-- frame -->
+  <rect x="1180" y="0" width="140" height="900" fill="#24160c"/>
+  <rect x="1320" y="0" width="280" height="900" fill="#1a1712"/>
+  <!-- bolt barrel on door -->
+  <rect x="820" y="410" width="300" height="80" rx="10" fill="url(#brass)"/>
+  <g fill="#5c3f15"><circle cx="845" cy="430" r="7"/><circle cx="845" cy="470" r="7"/><circle cx="1095" cy="430" r="7"/><circle cx="1095" cy="470" r="7"/></g>
+  <!-- bolt rod sliding into the keeper -->
+  <rect x="880" y="436" width="390" height="28" rx="14" fill="#e2b86a"/>
+  <rect x="960" y="400" width="26" height="60" rx="8" fill="#e2b86a"/>
+  <!-- keeper on frame -->
+  <rect x="1200" y="406" width="100" height="88" rx="8" fill="url(#brass)"/>
+  <rect x="1222" y="432" width="60" height="36" rx="6" fill="#2a1d10"/>
+  <rect x="1222" y="436" width="48" height="28" rx="10" fill="#e2b86a"/>
+  <!-- motion lines -->
+  <g stroke="#f6dca0" stroke-width="5" stroke-linecap="round" opacity="0.6"><line x1="700" y1="430" x2="820" y2="430"/><line x1="660" y1="450" x2="810" y2="450"/><line x1="720" y1="470" x2="820" y2="470"/></g>
+  <!-- click arcs -->
+  <g fill="none" stroke="#f6dca0" stroke-width="5" stroke-linecap="round" opacity="0.8"><path d="M1340 380 Q1380 450 1340 520"/><path d="M1390 340 Q1450 450 1390 560"/><path d="M1440 300 Q1520 450 1440 600"/></g>
+  <!-- hand -->
+  <path d="M600 520 Q640 420 760 400 Q900 380 960 420 Q980 440 960 460 L880 470 Q860 500 800 520 Q720 560 600 600Z" fill="#0a0705"/>
+  <rect width="1600" height="900" fill="url(#lamp)"/>
+</svg>

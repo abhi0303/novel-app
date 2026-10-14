@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#070b12"/>
+      <stop offset="0.55" stop-color="#152031"/>
+      <stop offset="1" stop-color="#1f2c3f"/>
+    </linearGradient>
+    <radialGradient id="flash" cx="78%" cy="18%" r="40%">
+      <stop offset="0" stop-color="#a9c4e6" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#a9c4e6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#ffcf7a" stop-opacity="0.9"/>
+      <stop offset="0.4" stop-color="#f2a640" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#f2a640" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="18"/></filter>
+    <filter id="soft"><feGaussianBlur stdDeviation="3"/></filter>
+    <pattern id="rain" width="46" height="90" patternUnits="userSpaceOnUse" patternTransform="rotate(14)">
+      <line x1="8" y1="0" x2="8" y2="26" stroke="#b9cce2" stroke-width="1.3" stroke-opacity="0.32"/>
+      <line x1="31" y1="44" x2="31" y2="64" stroke="#b9cce2" stroke-width="1" stroke-opacity="0.22"/>
+    </pattern>
+    <symbol id="pine" viewBox="0 0 100 300">
+      <polygon points="50,0 70,60 60,60 82,120 68,120 92,190 74,190 100,260 56,260 56,300 44,300 44,260 0,260 26,190 8,190 32,120 18,120 40,60 30,60"/>
+    </symbol>
+    <radialGradient id="vig" cx="50%" cy="50%" r="75%">
+      <stop offset="0.55" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0.7"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <rect width="1600" height="900" fill="url(#flash)"/>
+  <path d="M1270 40 l-34 92 l40 -6 l-52 118 l26 -4 l-40 96" fill="none" stroke="#dfeaff" stroke-width="3" stroke-opacity="0.55" filter="url(#soft)"/>
+
+  <!-- far ranges -->
+  <path d="M0 520 L160 430 L300 480 L470 380 L640 460 L780 400 L960 470 L1120 360 L1300 450 L1460 400 L1600 460 L1600 900 L0 900Z" fill="#142030"/>
+  <path d="M0 580 L220 500 L400 560 L600 500 L820 560 L1020 510 L1240 570 L1420 520 L1600 560 L1600 900 L0 900Z" fill="#111a27"/>
+  <ellipse cx="400" cy="560" rx="420" ry="40" fill="#8aa0b8" opacity="0.12" filter="url(#blur)"/>
+  <ellipse cx="1250" cy="590" rx="460" ry="46" fill="#8aa0b8" opacity="0.1" filter="url(#blur)"/>
+
+  <!-- hotel -->
+  <g>
+    <rect x="430" y="470" width="180" height="190" fill="#101822"/>
+    <polygon points="410,472 520,404 630,472" fill="#0b1119"/>
+    <rect x="590" y="430" width="440" height="230" fill="#131c28"/>
+    <polygon points="566,434 810,340 1054,434" fill="#0b1119"/>
+    <rect x="770" y="300" width="80" height="150" fill="#121a26"/>
+    <polygon points="758,302 810,232 862,302" fill="#0a1018"/>
+    <rect x="1010" y="480" width="170" height="180" fill="#101822"/>
+    <polygon points="992,482 1095,420 1198,482" fill="#0b1119"/>
+    <rect x="640" y="360" width="22" height="50" fill="#0a1018"/>
+    <rect x="960" y="372" width="22" height="46" fill="#0a1018"/>
+    <g fill="#1c2838">
+      <rect x="615" y="462" width="28" height="48"/><rect x="667" y="462" width="28" height="48"/>
+      <rect x="719" y="462" width="28" height="48"/><rect x="771" y="462" width="28" height="48"/>
+      <rect x="875" y="462" width="28" height="48"/><rect x="927" y="462" width="28" height="48"/>
+      <rect x="979" y="462" width="28" height="48"/>
+      <rect x="615" y="560" width="28" height="48"/><rect x="667" y="560" width="28" height="48"/>
+      <rect x="719" y="560" width="28" height="48"/><rect x="875" y="560" width="28" height="48"/>
+      <rect x="927" y="560" width="28" height="48"/><rect x="979" y="560" width="28" height="48"/>
+      <rect x="460" y="510" width="26" height="44"/><rect x="545" y="510" width="26" height="44"/>
+      <rect x="1040" y="520" width="26" height="44"/><rect x="1120" y="520" width="26" height="44"/>
+      <rect x="796" y="330" width="28" height="40"/>
+    </g>
+    <rect x="667" y="560" width="28" height="48" fill="#3b3320" opacity="0.6"/>
+    <!-- room 7, lit -->
+    <circle cx="837" cy="486" r="70" fill="url(#glow)"/>
+    <rect x="823" y="462" width="28" height="48" fill="#f6c46c"/>
+    <line x1="837" y1="462" x2="837" y2="510" stroke="#7a4f17" stroke-width="2"/>
+    <line x1="823" y1="484" x2="851" y2="484" stroke="#7a4f17" stroke-width="2"/>
+    <!-- veranda -->
+    <rect x="590" y="620" width="440" height="10" fill="#0a1018"/>
+    <g fill="#0a1018">
+      <rect x="600" y="630" width="8" height="30"/><rect x="700" y="630" width="8" height="30"/>
+      <rect x="800" y="630" width="8" height="30"/><rect x="900" y="630" width="8" height="30"/>
+      <rect x="1012" y="630" width="8" height="30"/>
+    </g>
+    <rect x="780" y="590" width="60" height="70" fill="#2a2216"/>
+    <text x="810" y="420" font-family="Georgia, serif" font-size="15" letter-spacing="4" fill="#b8893a" text-anchor="middle" opacity="0.8">SILVER PINE</text>
+  </g>
+
+  <!-- ridge and pines -->
+  <path d="M0 660 C300 640 520 670 800 660 C1080 650 1300 640 1600 668 L1600 900 L0 900Z" fill="#0b1018"/>
+  <g fill="#080c13">
+    <use href="#pine" x="40" y="430" width="120" height="300"/>
+    <use href="#pine" x="140" y="470" width="100" height="250"/>
+    <use href="#pine" x="250" y="400" width="140" height="330"/>
+    <use href="#pine" x="350" y="500" width="80" height="200"/>
+    <use href="#pine" x="1220" y="440" width="120" height="290"/>
+    <use href="#pine" x="1320" y="390" width="150" height="340"/>
+    <use href="#pine" x="1450" y="470" width="110" height="260"/>
+    <use href="#pine" x="1180" y="520" width="70" height="180"/>
+  </g>
+
+  <!-- road and gate -->
+  <path d="M760 900 C780 820 790 760 800 700 L820 700 C830 760 860 820 900 900Z" fill="#141b25"/>
+  <g fill="#0e141d">
+    <rect x="720" y="690" width="34" height="110"/>
+    <rect x="866" y="690" width="34" height="110"/>
+  </g>
+  <circle cx="737" cy="682" r="46" fill="url(#glow)"/>
+  <circle cx="883" cy="682" r="46" fill="url(#glow)"/>
+  <rect x="729" y="672" width="16" height="18" fill="#ffd58a"/>
+  <rect x="875" y="672" width="16" height="18" fill="#ffd58a"/>
+
+  <!-- figure with red umbrella -->
+  <g transform="translate(960 770)">
+    <ellipse cx="0" cy="92" rx="34" ry="6" fill="#000" opacity="0.5"/>
+    <path d="M-14 20 L14 20 L18 88 L6 88 L2 52 L-2 52 L-6 88 L-18 88Z" fill="#06090e"/>
+    <path d="M-62 4 Q0 -58 62 4 Q46 -2 31 4 Q16 -2 0 4 Q-16 -2 -31 4 Q-46 -2 -62 4Z" fill="#c0392b"/>
+    <path d="M-62 4 Q0 -58 62 4" fill="none" stroke="#e05a4b" stroke-width="2" opacity="0.7"/>
+    <line x1="0" y1="-26" x2="0" y2="30" stroke="#20120f" stroke-width="3"/>
+  </g>
+
+  <rect width="1600" height="900" fill="url(#rain)"/>
+  <rect width="1600" height="900" fill="url(#vig)"/>
+</svg>

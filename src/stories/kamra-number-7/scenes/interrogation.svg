@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0b0e12"/><stop offset="1" stop-color="#161b22"/></linearGradient>
+    <linearGradient id="cone" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe2a8" stop-opacity="0.5"/><stop offset="1" stop-color="#ffe2a8" stop-opacity="0.04"/></linearGradient>
+    <radialGradient id="pool" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#ffe2a8" stop-opacity="0.35"/><stop offset="1" stop-color="#ffe2a8" stop-opacity="0"/></radialGradient>
+    <linearGradient id="mirror" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1c2633"/><stop offset="1" stop-color="#0f141b"/></linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#wall)"/>
+  <rect x="980" y="160" width="460" height="300" fill="url(#mirror)" stroke="#262f3b" stroke-width="8"/>
+  <path d="M1000 180 L1140 180 L1020 440 L1000 440Z" fill="#fff" opacity="0.04"/>
+  <line x1="800" y1="0" x2="800" y2="150" stroke="#2a2f36" stroke-width="4"/>
+  <path d="M740 150 L860 150 L840 115 L760 115Z" fill="#30363e"/>
+  <polygon points="745,150 855,150 1240,880 360,880" fill="url(#cone)"/>
+  <ellipse cx="800" cy="640" rx="460" ry="90" fill="url(#pool)"/>
+  <!-- suspect seated -->
+  <g fill="#07090c">
+    <circle cx="800" cy="380" r="56"/>
+    <path d="M690 600 Q690 460 800 450 Q910 460 910 600Z"/>
+  </g>
+  <!-- table -->
+  <polygon points="420,600 1180,600 1300,760 300,760" fill="#3a3f46"/>
+  <polygon points="300,760 1300,760 1300,790 300,790" fill="#22262c"/>
+  <g fill="#07090c"><ellipse cx="745" cy="600" rx="50" ry="18"/><ellipse cx="855" cy="600" rx="50" ry="18"/></g>
+  <!-- file, cup -->
+  <polygon points="560,640 740,640 760,720 560,720" fill="#c9a96b"/>
+  <polygon points="575,650 735,650 752,712 575,712" fill="#efe6cf"/>
+  <g fill="#9b8d70"><rect x="595" y="666" width="110" height="6"/><rect x="595" y="682" width="130" height="6"/><rect x="595" y="698" width="90" height="6"/></g>
+  <path d="M960 650 L1010 650 L1004 714 L966 714Z" fill="#e8e1d4"/>
+  <ellipse cx="985" cy="650" rx="25" ry="6" fill="#5a3a1c"/>
+  <!-- Dev, foreground -->
+  <g fill="#020304">
+    <circle cx="210" cy="640" r="120"/>
+    <path d="M-40 900 Q-20 700 210 690 Q440 700 470 900Z"/>
+  </g>
+</svg>

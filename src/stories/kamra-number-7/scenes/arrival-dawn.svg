@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d3a4b"/><stop offset="0.6" stop-color="#7b8a9c"/><stop offset="1" stop-color="#a9b4c0"/></linearGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="22"/></filter>
+    <filter id="soft"><feGaussianBlur stdDeviation="6"/></filter>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5d6773"/><stop offset="1" stop-color="#20262e"/></linearGradient>
+    <radialGradient id="red"><stop offset="0" stop-color="#ff4a3d" stop-opacity="0.9"/><stop offset="1" stop-color="#ff4a3d" stop-opacity="0"/></radialGradient>
+    <radialGradient id="blue"><stop offset="0" stop-color="#3d8bff" stop-opacity="0.9"/><stop offset="1" stop-color="#3d8bff" stop-opacity="0"/></radialGradient>
+    <symbol id="pine" viewBox="0 0 100 300"><polygon points="50,0 70,60 60,60 82,120 68,120 92,190 74,190 100,260 56,260 56,300 44,300 44,260 0,260 26,190 8,190 32,120 18,120 40,60 30,60"/></symbol>
+  </defs>
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <path d="M0 420 L200 330 L380 400 L560 300 L760 380 L980 290 L1200 370 L1400 310 L1600 360 L1600 900 L0 900Z" fill="#5e6c7d"/>
+  <path d="M0 500 L260 430 L500 490 L760 420 L1020 480 L1300 430 L1600 470 L1600 900 L0 900Z" fill="#4a5767"/>
+  <!-- hotel in mist -->
+  <g opacity="0.75" fill="#35404d">
+    <rect x="980" y="360" width="360" height="150"/>
+    <polygon points="960,362 1160,300 1360,362"/>
+    <rect x="1130" y="280" width="60" height="90"/><polygon points="1120,282 1160,240 1200,282"/>
+  </g>
+  <ellipse cx="800" cy="520" rx="900" ry="70" fill="#c3ccd6" opacity="0.5" filter="url(#blur)"/>
+  <g fill="#2e3742" opacity="0.9">
+    <use href="#pine" x="20" y="300" width="140" height="360"/><use href="#pine" x="150" y="360" width="110" height="290"/>
+    <use href="#pine" x="1400" y="320" width="150" height="360"/><use href="#pine" x="1320" y="400" width="100" height="250"/>
+  </g>
+  <path d="M0 640 C400 600 1200 600 1600 640 L1600 900 L0 900Z" fill="#262d36"/>
+  <path d="M620 900 C700 760 760 660 800 600 L860 600 C900 680 1000 780 1180 900Z" fill="url(#road)"/>
+  <!-- police tape at gate -->
+  <rect x="690" y="560" width="26" height="120" fill="#1d232b"/><rect x="964" y="560" width="26" height="120" fill="#1d232b"/>
+  <path d="M716 600 Q840 618 964 600" stroke="#f2c230" stroke-width="10" fill="none"/>
+  <path d="M716 600 Q840 618 964 600" stroke="#1d232b" stroke-width="10" stroke-dasharray="14 18" fill="none"/>
+  <!-- jeep -->
+  <g transform="translate(260 590)">
+    <circle cx="150" cy="-40" r="120" fill="url(#red)" opacity="0.5"/>
+    <circle cx="200" cy="-40" r="120" fill="url(#blue)" opacity="0.4"/>
+    <rect x="0" y="0" width="330" height="110" rx="18" fill="#c9ced4"/>
+    <rect x="40" y="-60" width="220" height="70" rx="12" fill="#b9bfc6"/>
+    <rect x="60" y="-48" width="80" height="48" rx="6" fill="#5b6672"/><rect x="155" y="-48" width="90" height="48" rx="6" fill="#5b6672"/>
+    <rect x="140" y="-74" width="30" height="14" rx="4" fill="#ff4a3d"/><rect x="170" y="-74" width="30" height="14" rx="4" fill="#3d8bff"/>
+    <rect x="0" y="50" width="330" height="14" fill="#2f5aa6"/>
+    <circle cx="70" cy="112" r="38" fill="#14181e"/><circle cx="260" cy="112" r="38" fill="#14181e"/>
+    <circle cx="70" cy="112" r="16" fill="#6d757f"/><circle cx="260" cy="112" r="16" fill="#6d757f"/>
+  </g>
+  <!-- Dev (long coat) and Kabir (notebook) -->
+  <g transform="translate(820 600)" fill="#12161c">
+    <ellipse cx="0" cy="262" rx="70" ry="10" opacity="0.4"/>
+    <circle cx="0" cy="20" r="26"/>
+    <path d="M-44 60 Q0 40 44 60 L58 220 L22 220 L18 262 L4 262 L2 230 L-2 230 L-4 262 L-18 262 L-22 220 L-58 220Z"/>
+    <path d="M-20 52 L0 110 L20 52" fill="#2a3038"/>
+  </g>
+  <g transform="translate(960 630)" fill="#161b22">
+    <ellipse cx="0" cy="232" rx="56" ry="9" opacity="0.4"/>
+    <circle cx="0" cy="18" r="22"/>
+    <path d="M-34 50 Q0 36 34 50 L40 160 L18 160 L16 232 L4 232 L2 170 L-2 170 L-4 232 L-16 232 L-18 160 L-40 160Z"/>
+    <rect x="30" y="92" width="34" height="44" rx="3" fill="#e9dfc8" transform="rotate(-12 47 114)"/>
+  </g>
+  <ellipse cx="800" cy="760" rx="700" ry="60" fill="#c3ccd6" opacity="0.25" filter="url(#blur)"/>
+</svg>

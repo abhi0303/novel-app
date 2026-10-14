@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <defs>
+    <radialGradient id="bg" cx="35%" cy="25%" r="90%"><stop offset="0" stop-color="#3a2a1b"/><stop offset="0.6" stop-color="#1a120b"/><stop offset="1" stop-color="#0b0805"/></radialGradient>
+    <radialGradient id="brass" cx="40%" cy="35%" r="70%"><stop offset="0" stop-color="#f0cf86"/><stop offset="0.5" stop-color="#b8893a"/><stop offset="1" stop-color="#5c3f15"/></radialGradient>
+    <radialGradient id="face" cx="45%" cy="40%" r="65%"><stop offset="0" stop-color="#f7efdc"/><stop offset="1" stop-color="#cdbf9f"/></radialGradient>
+    <linearGradient id="desk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3b2716"/><stop offset="1" stop-color="#1c120a"/></linearGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="14"/></filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect y="600" width="1600" height="300" fill="url(#desk)"/>
+  <g filter="url(#blur)" opacity="0.7">
+    <path d="M1180 520 L1340 520 L1320 620 L1200 620Z" fill="#e8dcc6"/>
+    <ellipse cx="1260" cy="520" rx="80" ry="16" fill="#5a3a1c"/>
+    <ellipse cx="1260" cy="630" rx="140" ry="20" fill="#d8ccb4"/>
+  </g>
+  <g transform="rotate(-14 760 470)">
+    <ellipse cx="760" cy="760" rx="300" ry="30" fill="#000" opacity="0.45"/>
+    <rect x="600" y="690" width="40" height="60" rx="8" fill="#7a5a26"/>
+    <rect x="880" y="690" width="40" height="60" rx="8" fill="#7a5a26"/>
+    <circle cx="760" cy="450" r="270" fill="url(#brass)"/>
+    <circle cx="760" cy="450" r="230" fill="#4a3312"/>
+    <circle cx="760" cy="450" r="218" fill="url(#face)"/>
+    <g stroke="#2a1d10" stroke-width="6" stroke-linecap="round">
+      <line x1="760" y1="250" x2="760" y2="280"/><line x1="960" y1="450" x2="930" y2="450"/><line x1="760" y1="650" x2="760" y2="620"/><line x1="560" y1="450" x2="590" y2="450"/>
+    </g>
+    <g stroke="#2a1d10" stroke-width="3">
+      <line x1="860" y1="277" x2="852" y2="291"/><line x1="933" y1="350" x2="919" y2="358"/><line x1="933" y1="550" x2="919" y2="542"/><line x1="860" y1="623" x2="852" y2="609"/>
+      <line x1="660" y1="623" x2="668" y2="609"/><line x1="587" y1="550" x2="601" y2="542"/><line x1="587" y1="350" x2="601" y2="358"/><line x1="660" y1="277" x2="668" y2="291"/>
+    </g>
+    <!-- hands at 10:15 -->
+    <line x1="760" y1="450" x2="652" y2="367" stroke="#1a1209" stroke-width="16" stroke-linecap="round"/>
+    <line x1="760" y1="450" x2="935" y2="450" stroke="#1a1209" stroke-width="9" stroke-linecap="round"/>
+    <circle cx="760" cy="450" r="16" fill="#b8893a"/>
+    <!-- cracked glass -->
+    <g stroke="#ffffff" stroke-opacity="0.75" stroke-width="2.5" fill="none">
+      <path d="M840 380 L900 300 L930 270"/>
+      <path d="M840 380 L960 400"/>
+      <path d="M840 380 L880 470 L900 560"/>
+      <path d="M840 380 L760 320 L700 270"/>
+      <path d="M840 380 L790 460 L720 520 L660 560"/>
+      <path d="M900 300 L940 330"/><path d="M880 470 L940 480"/><path d="M760 320 L740 360"/>
+    </g>
+    <ellipse cx="690" cy="360" rx="120" ry="70" fill="#fff" opacity="0.08" transform="rotate(-30 690 360)"/>
+  </g>
+</svg>

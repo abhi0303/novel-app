@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5e6a32"/><stop offset="1" stop-color="#3a421d"/></linearGradient>
+    <radialGradient id="torch" cx="55%" cy="42%" r="45%"><stop offset="0" stop-color="#fff6dc" stop-opacity="0.35"/><stop offset="1" stop-color="#000" stop-opacity="0.65"/></radialGradient>
+    <linearGradient id="lcd" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a8d79a"/><stop offset="1" stop-color="#7fbf74"/></linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#panel)"/>
+  <g fill="#2b3115"><circle cx="60" cy="60" r="14"/><circle cx="1540" cy="60" r="14"/><circle cx="60" cy="840" r="14"/><circle cx="1540" cy="840" r="14"/></g>
+  <rect x="300" y="130" width="1000" height="440" rx="20" fill="#1c210d"/>
+  <rect x="340" y="170" width="920" height="360" rx="8" fill="url(#lcd)"/>
+  <g font-family="ui-monospace, Menlo, Consolas, monospace" fill="#173016">
+    <text x="380" y="240" font-size="44">EVENT LOG</text>
+    <text x="1220" y="240" font-size="44" text-anchor="end">14/10</text>
+    <line x1="380" y1="262" x2="1220" y2="262" stroke="#173016" stroke-width="3"/>
+    <text x="380" y="330" font-size="50" font-weight="700">22:41:07  MANUAL START</text>
+    <text x="380" y="400" font-size="50">22:47:30  STOP</text>
+    <text x="380" y="470" font-size="50" opacity="0.4">--:--:--  ----</text>
+  </g>
+  <g>
+    <circle cx="500" cy="700" r="50" fill="#2e8b57"/><circle cx="660" cy="700" r="50" fill="#c0392b"/>
+    <rect x="800" y="660" width="80" height="80" rx="10" fill="#2b3115"/><rect x="900" y="660" width="80" height="80" rx="10" fill="#2b3115"/><rect x="1000" y="660" width="80" height="80" rx="10" fill="#2b3115"/>
+    <polygon points="840,682 822,716 858,716" fill="#c9d0b0"/><polygon points="940,718 922,684 958,684" fill="#c9d0b0"/><rect x="1024" y="688" width="32" height="24" fill="#c9d0b0"/>
+  </g>
+  <!-- register page in the corner -->
+  <g transform="rotate(-8 1300 800)">
+    <rect x="1120" y="640" width="420" height="300" fill="#efe6cf"/>
+    <g stroke="#b9c3d6" stroke-width="2"><line x1="1130" y1="700" x2="1530" y2="700"/><line x1="1130" y1="750" x2="1530" y2="750"/><line x1="1130" y1="800" x2="1530" y2="800"/></g>
+    <text x="1150" y="740" font-family="Georgia, serif" font-style="italic" font-size="40" fill="#2c3a66">22:12</text>
+    <text x="1290" y="740" font-family="Georgia, serif" font-style="italic" font-size="34" fill="#2c3a66">DG check</text>
+  </g>
+  <rect width="1600" height="900" fill="url(#torch)"/>
+</svg>

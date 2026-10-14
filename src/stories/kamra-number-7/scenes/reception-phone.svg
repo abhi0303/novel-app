@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#22170f"/><stop offset="1" stop-color="#140d08"/></linearGradient>
+    <linearGradient id="top" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5a3a22"/><stop offset="1" stop-color="#3a2414"/></linearGradient>
+    <radialGradient id="lamp" cx="70%" cy="55%" r="45%"><stop offset="0" stop-color="#ffd38a" stop-opacity="0.55"/><stop offset="1" stop-color="#ffd38a" stop-opacity="0"/></radialGradient>
+    <radialGradient id="vig" cx="50%" cy="50%" r="75%"><stop offset="0.5" stop-opacity="0"/><stop offset="1" stop-opacity="0.75"/></radialGradient>
+    <linearGradient id="win" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2b3e58"/><stop offset="1" stop-color="#101a28"/></linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#wall)"/>
+  <g stroke="#2e2015" stroke-width="3">
+    <line x1="0" y1="430" x2="1600" y2="430"/>
+    <line x1="200" y1="430" x2="200" y2="900"/><line x1="500" y1="430" x2="500" y2="900"/><line x1="800" y1="430" x2="800" y2="900"/><line x1="1100" y1="430" x2="1100" y2="900"/><line x1="1400" y1="430" x2="1400" y2="900"/>
+  </g>
+  <!-- window -->
+  <rect x="1250" y="80" width="260" height="330" fill="url(#win)" stroke="#3b2717" stroke-width="14"/>
+  <line x1="1380" y1="80" x2="1380" y2="410" stroke="#3b2717" stroke-width="8"/>
+  <g stroke="#9db5d3" stroke-opacity="0.35" stroke-width="2">
+    <line x1="1280" y1="120" x2="1276" y2="170"/><line x1="1320" y1="200" x2="1316" y2="260"/><line x1="1420" y1="140" x2="1415" y2="210"/><line x1="1470" y1="260" x2="1466" y2="320"/><line x1="1300" y1="300" x2="1297" y2="350"/>
+  </g>
+  <!-- wall clock 11:07 -->
+  <circle cx="300" cy="200" r="104" fill="#3b2717"/>
+  <circle cx="300" cy="200" r="88" fill="#efe4cc"/>
+  <g stroke="#3b2717" stroke-width="4">
+    <line x1="300" y1="120" x2="300" y2="134"/><line x1="380" y1="200" x2="366" y2="200"/><line x1="300" y1="280" x2="300" y2="266"/><line x1="220" y1="200" x2="234" y2="200"/>
+  </g>
+  <line x1="300" y1="200" x2="276" y2="152" stroke="#1d130b" stroke-width="7" stroke-linecap="round"/>
+  <line x1="300" y1="200" x2="347" y2="146" stroke="#1d130b" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="300" cy="200" r="7" fill="#b8893a"/>
+  <!-- key rack -->
+  <rect x="560" y="110" width="520" height="190" rx="8" fill="#2c1d12" stroke="#4a3122" stroke-width="4"/>
+  <g fill="#b8893a">
+    <circle cx="610" cy="160" r="6"/><circle cx="710" cy="160" r="6"/><circle cx="810" cy="160" r="6"/><circle cx="910" cy="160" r="6"/><circle cx="1010" cy="160" r="6"/>
+    <circle cx="610" cy="240" r="6"/><circle cx="710" cy="240" r="6"/><circle cx="810" cy="240" r="6"/><circle cx="910" cy="240" r="6"/><circle cx="1010" cy="240" r="6"/>
+  </g>
+  <g fill="#c99a48">
+    <rect x="604" y="168" width="12" height="34" rx="3"/><rect x="704" y="168" width="12" height="34" rx="3"/><rect x="804" y="168" width="12" height="34" rx="3"/><rect x="904" y="168" width="12" height="34" rx="3"/><rect x="1004" y="168" width="12" height="34" rx="3"/>
+    <rect x="604" y="248" width="12" height="34" rx="3"/><rect x="804" y="248" width="12" height="34" rx="3"/><rect x="904" y="248" width="12" height="34" rx="3"/><rect x="1004" y="248" width="12" height="34" rx="3"/>
+  </g>
+  <g font-family="Georgia, serif" font-size="18" fill="#8a6a3a" text-anchor="middle">
+    <text x="610" y="140">1</text><text x="710" y="140">2</text><text x="810" y="140">3</text><text x="910" y="140">4</text><text x="1010" y="140">5</text>
+    <text x="610" y="226">6</text><text x="710" y="226" fill="#e0a043">7</text><text x="810" y="226">8</text><text x="910" y="226">9</text><text x="1010" y="226">10</text>
+  </g>
+  <!-- counter -->
+  <rect x="0" y="560" width="1600" height="340" fill="#2a1a0f"/>
+  <rect x="0" y="540" width="1600" height="40" fill="url(#top)"/>
+  <rect width="1600" height="900" fill="url(#lamp)"/>
+  <!-- banker's lamp -->
+  <path d="M1060 540 L1100 540 L1094 470 L1066 470Z" fill="#6b4a22"/>
+  <path d="M990 470 Q1080 400 1170 470Z" fill="#1f5a3c"/>
+  <ellipse cx="1080" cy="470" rx="90" ry="10" fill="#ffd38a" opacity="0.7"/>
+  <!-- register -->
+  <polygon points="330,548 560,548 590,520 360,520" fill="#e8dcc0"/>
+  <line x1="460" y1="520" x2="446" y2="548" stroke="#9b8a66" stroke-width="2"/>
+  <!-- bell -->
+  <ellipse cx="230" cy="544" rx="44" ry="8" fill="#6b4a22"/>
+  <path d="M196 540 Q230 484 264 540Z" fill="#c99a48"/>
+  <circle cx="230" cy="490" r="6" fill="#e2b86a"/>
+  <!-- rotary phone, receiver off the hook -->
+  <path d="M640 545 L860 545 L830 440 L670 440Z" fill="#e7dcc6"/>
+  <ellipse cx="750" cy="470" rx="58" ry="24" fill="#cfc2a8"/>
+  <g fill="#8d816b"><circle cx="722" cy="462" r="6"/><circle cx="742" cy="456" r="6"/><circle cx="762" cy="456" r="6"/><circle cx="780" cy="464" r="6"/><circle cx="726" cy="480" r="6"/><circle cx="772" cy="482" r="6"/></g>
+  <path d="M680 432 L820 432 L812 420 L688 420Z" fill="#cfc2a8"/>
+  <!-- receiver lying on counter -->
+  <path d="M880 528 Q960 500 1010 532 Q1020 540 1006 548 L990 548 Q960 528 900 548 L884 548 Q872 540 880 528Z" fill="#e7dcc6"/>
+  <path d="M846 520 C870 560 830 580 880 590 C930 600 890 620 930 620 C960 620 950 580 990 548" fill="none" stroke="#cfc2a8" stroke-width="5"/>
+  <rect width="1600" height="900" fill="url(#vig)"/>
+</svg>

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#1a1f27"/><stop offset="0.5" stop-color="#2a2a2a"/><stop offset="1" stop-color="#15191f"/></linearGradient>
+    <pattern id="paper" width="60" height="60" patternUnits="userSpaceOnUse"><rect width="60" height="60" fill="none"/><path d="M30 6 l6 12 l-6 12 l-6 -12z" fill="#ffffff" opacity="0.03"/></pattern>
+    <linearGradient id="door" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#3d2616"/><stop offset="1" stop-color="#2a190e"/></linearGradient>
+    <radialGradient id="sconce" cx="50%" cy="0%" r="80%"><stop offset="0" stop-color="#ffcf86" stop-opacity="0.55"/><stop offset="1" stop-color="#ffcf86" stop-opacity="0"/></radialGradient>
+    <radialGradient id="vig" cx="50%" cy="45%" r="75%"><stop offset="0.45" stop-opacity="0"/><stop offset="1" stop-opacity="0.8"/></radialGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#wall)"/>
+  <rect width="1600" height="900" fill="url(#paper)"/>
+  <rect y="740" width="1600" height="160" fill="#1a0f0d"/>
+  <rect x="380" y="760" width="840" height="140" fill="#4a1714"/>
+  <rect x="380" y="760" width="840" height="10" fill="#6b2a20"/>
+  <!-- sconce -->
+  <path d="M1270 0 L1590 0 L1500 700 L1360 700Z" fill="url(#sconce)" opacity="0.6"/>
+  <rect x="1405" y="250" width="50" height="16" fill="#b8893a"/>
+  <path d="M1395 250 L1465 250 L1450 200 L1410 200Z" fill="#f3d39a"/>
+  <!-- door frame -->
+  <rect x="560" y="120" width="480" height="640" fill="#24160c"/>
+  <!-- door, slightly ajar -->
+  <rect x="590" y="140" width="420" height="620" fill="#05070a"/>
+  <polygon points="590,140 980,152 980,748 590,760" fill="url(#door)"/>
+  <g fill="none" stroke="#1e1209" stroke-width="6">
+    <rect x="630" y="190" width="140" height="220"/><rect x="800" y="194" width="140" height="216"/>
+    <rect x="630" y="460" width="140" height="250"/><rect x="800" y="460" width="140" height="246"/>
+  </g>
+  <!-- number plate -->
+  <rect x="738" y="232" width="84" height="104" rx="10" fill="#b8893a"/>
+  <text x="780" y="315" font-family="Georgia, serif" font-size="86" font-weight="bold" fill="#3a2410" text-anchor="middle">7</text>
+  <circle cx="940" cy="450" r="16" fill="#c99a48"/>
+  <rect x="932" y="478" width="16" height="30" rx="6" fill="#1a0f08"/>
+  <!-- splintered frame where the bolt plate tore out -->
+  <g fill="#c9a274">
+    <polygon points="1010,380 1040,372 1046,388 1022,392"/>
+    <polygon points="1010,400 1052,404 1030,414"/>
+    <polygon points="1010,418 1038,430 1012,432"/>
+    <polygon points="1040,372 1060,360 1052,380"/>
+  </g>
+  <rect x="1012" y="386" width="16" height="44" fill="#b8893a" transform="rotate(18 1020 408)"/>
+  <!-- police tape -->
+  <g transform="rotate(-14 800 450)">
+    <rect x="380" y="400" width="840" height="46" fill="#f2c230"/>
+    <g fill="#14171c"><polygon points="420,400 470,400 440,446 390,446"/><polygon points="560,400 610,400 580,446 530,446"/><polygon points="700,400 750,400 720,446 670,446"/><polygon points="840,400 890,400 860,446 810,446"/><polygon points="980,400 1030,400 1000,446 950,446"/><polygon points="1120,400 1170,400 1140,446 1090,446"/></g>
+  </g>
+  <g transform="rotate(12 800 520)">
+    <rect x="380" y="500" width="840" height="46" fill="#f2c230"/>
+    <g fill="#14171c"><polygon points="420,500 470,500 440,546 390,546"/><polygon points="560,500 610,500 580,546 530,546"/><polygon points="700,500 750,500 720,546 670,546"/><polygon points="840,500 890,500 860,546 810,546"/><polygon points="980,500 1030,500 1000,546 950,546"/><polygon points="1120,500 1170,500 1140,546 1090,546"/></g>
+  </g>
+  <rect width="1600" height="900" fill="url(#vig)"/>
+</svg>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1c2633"/><stop offset="1" stop-color="#0d131b"/></linearGradient>
+    <radialGradient id="stain" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#b7a77f" stop-opacity="0.55"/><stop offset="1" stop-color="#b7a77f" stop-opacity="0"/></radialGradient>
+    <radialGradient id="light" cx="45%" cy="40%" r="60%"><stop offset="0" stop-color="#dfeaf7" stop-opacity="0.2"/><stop offset="1" stop-color="#dfeaf7" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#light)"/>
+  <!-- letter page with a jagged gap -->
+  <path d="M360 90 L1240 90 L1240 420 L1210 428 L1180 418 L1150 430 L1120 420 L1090 432 L1060 420 L1030 430 L1000 420 L970 430 L940 418 L910 430 L880 420 L850 432 L820 420 L790 430 L760 418 L730 430 L700 420 L670 432 L640 420 L610 430 L580 418 L550 430 L520 420 L490 432 L460 420 L430 430 L400 420 L360 428Z" fill="#efe6cf"/>
+  <path d="M360 560 L400 552 L430 562 L460 550 L490 562 L520 552 L550 562 L580 550 L610 562 L640 552 L670 562 L700 550 L730 562 L760 552 L790 562 L820 550 L850 562 L880 552 L910 562 L940 550 L970 562 L1000 552 L1030 562 L1060 550 L1090 562 L1120 552 L1150 562 L1180 550 L1210 562 L1240 552 L1240 860 L360 860Z" fill="#efe6cf"/>
+  <g fill="none" stroke="#2c3a66" stroke-width="4" stroke-linecap="round" opacity="0.85">
+    <path d="M410 150 q14 -18 28 0 t28 -2 t28 2 t28 -4 t28 4 t26 0 q14 -16 28 0 t30 0 t26 -2 t30 2 t28 -4 t26 4"/>
+    <path d="M410 210 q16 -16 30 0 t26 0 t30 -4 t28 4 q12 -16 26 0 t30 2 t28 -2 t26 0 t30 -4 t26 4"/>
+    <path d="M410 270 q14 -16 28 0 t28 0 t26 -2 t30 2 q16 -18 30 0 t26 -2 t28 2 t30 0"/>
+    <path d="M410 330 q14 -18 28 0 t28 -2 t28 2 t28 -4 t28 4 t26 0 q14 -16 28 0 t30 0 t26 -2 t30 2"/>
+    <path d="M410 620 q14 -18 28 0 t28 -2 t28 2 t28 -4 t28 4 t26 0 q14 -16 28 0 t30 0"/>
+    <path d="M410 680 q16 -16 30 0 t26 0 t30 -4 t28 4 q12 -16 26 0 t30 2 t28 -2 t26 0"/>
+    <path d="M410 740 q14 -16 28 0 t28 0 t26 -2 t30 2 q16 -18 30 0"/>
+    <path d="M900 800 q20 -20 40 0 t40 -4 t40 4"/>
+  </g>
+  <!-- the wet strip, fitted back -->
+  <path d="M360 438 L400 430 L430 440 L460 430 L490 442 L520 432 L550 440 L580 428 L610 440 L640 430 L670 442 L700 430 L730 440 L760 428 L790 440 L820 430 L850 442 L880 430 L910 440 L940 428 L970 440 L1000 430 L1030 440 L1060 430 L1090 442 L1120 430 L1150 440 L1180 428 L1210 438 L1240 430 L1240 542 L1210 552 L1180 540 L1150 552 L1120 542 L1090 552 L1060 540 L1030 552 L1000 542 L970 552 L940 540 L910 552 L880 542 L850 552 L820 540 L790 552 L760 542 L730 552 L700 540 L670 552 L640 542 L610 552 L580 540 L550 552 L520 542 L490 552 L460 540 L430 552 L400 542 L360 550Z" fill="#e6d9b8"/>
+  <ellipse cx="560" cy="490" rx="160" ry="50" fill="url(#stain)"/>
+  <ellipse cx="980" cy="496" rx="180" ry="44" fill="url(#stain)"/>
+  <path d="M410 494 q14 -22 28 0 t28 -4 t26 6 q10 -18 24 -2 t30 0 t22 -10 t26 8 q16 -20 30 0 t26 2 t28 -6 t24 4 q14 -18 28 0 t26 -2 t30 4 t22 -8 t28 6 q12 -16 26 0 t24 2 t26 -4 t28 2 t26 -2" fill="none" stroke="#2c3a66" stroke-width="5" stroke-linecap="round"/>
+  <!-- alignment marks -->
+  <g stroke="#ffc46b" stroke-width="3" stroke-dasharray="8 8" fill="none"><path d="M340 426 H1260"/><path d="M340 554 H1260"/></g>
+  <g fill="#ffc46b"><polygon points="300,426 330,412 330,440"/><polygon points="300,554 330,540 330,568"/><polygon points="1300,426 1270,412 1270,440"/><polygon points="1300,554 1270,540 1270,568"/></g>
+  <!-- tags A / B -->
+  <g font-family="system-ui, sans-serif" font-weight="700" font-size="40" text-anchor="middle">
+    <g transform="translate(1380 220)"><rect x="-50" y="-50" width="100" height="100" rx="10" fill="#f2efe6"/><rect x="-50" y="-50" width="100" height="22" rx="6" fill="#c0392b"/><text y="34" fill="#1c2633">A</text></g>
+    <g transform="translate(1380 490)"><rect x="-50" y="-50" width="100" height="100" rx="10" fill="#f2efe6"/><rect x="-50" y="-50" width="100" height="22" rx="6" fill="#c0392b"/><text y="34" fill="#1c2633">B</text></g>
+  </g>
+</svg>

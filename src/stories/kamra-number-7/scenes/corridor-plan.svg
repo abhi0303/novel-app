@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0 H0 V40" fill="none" stroke="#2a4466" stroke-width="1"/></pattern>
+    <pattern id="steps" width="16" height="16" patternUnits="userSpaceOnUse"><line x1="0" y1="8" x2="16" y2="8" stroke="#9ec3ee" stroke-width="2"/></pattern>
+  </defs>
+  <rect width="1600" height="900" fill="#11223a"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <text x="80" y="150" font-family="ui-monospace, Menlo, monospace" font-size="28" fill="#cfe3fb">SILVER PINE · 2F</text>
+  <!-- windows along the corridor's outer wall -->
+  <g stroke="#9ec3ee" stroke-width="12"><line x1="180" y1="200" x2="380" y2="200"/><line x1="560" y1="200" x2="760" y2="200"/><line x1="940" y1="200" x2="1140" y2="200"/></g>
+  <g fill="none" stroke="#cfe3fb" stroke-width="5">
+    <rect x="80" y="200" width="1440" height="460"/>
+    <line x1="80" y1="390" x2="1520" y2="390"/>
+    <line x1="280" y1="390" x2="280" y2="660"/><line x1="470" y1="390" x2="470" y2="660"/>
+    <line x1="660" y1="390" x2="660" y2="660"/><line x1="750" y1="390" x2="750" y2="660"/>
+    <line x1="940" y1="390" x2="940" y2="660"/><line x1="1130" y1="390" x2="1130" y2="660"/>
+    <line x1="1320" y1="390" x2="1320" y2="660"/>
+  </g>
+  <rect x="753" y="393" width="184" height="264" fill="#e0a043" opacity="0.2"/>
+  <rect x="664" y="400" width="82" height="250" fill="url(#steps)"/>
+  <rect x="1330" y="400" width="180" height="250" fill="url(#steps)"/>
+  <g fill="none" stroke="#9ec3ee" stroke-width="3">
+    <path d="M110 390 A60 60 0 0 0 170 450"/><path d="M310 390 A60 60 0 0 0 370 450"/><path d="M500 390 A60 60 0 0 0 560 450"/>
+    <path d="M780 390 A60 60 0 0 0 840 450"/><path d="M970 390 A60 60 0 0 0 1030 450"/><path d="M1160 390 A60 60 0 0 0 1220 450"/>
+  </g>
+  <g font-family="Georgia, serif" font-size="64" fill="#ffffff" text-anchor="middle">
+    <text x="180" y="560">10</text><text x="375" y="560">9</text><text x="565" y="560">8</text>
+    <text x="845" y="560" fill="#ffc46b">7</text><text x="1035" y="560">6</text><text x="1225" y="560">5</text>
+  </g>
+  <g font-family="system-ui, sans-serif" font-size="26" fill="#9ec3ee" text-anchor="middle">
+    <text x="180" y="610">Negi</text><text x="375" y="610">Dr. Kapoor</text><text x="565" y="610">—</text>
+    <text x="845" y="610" fill="#ffc46b">Vikram</text><text x="1035" y="610">—</text><text x="1225" y="610">Meera</text>
+  </g>
+  <g fill="none" stroke="#ffc46b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M684 620 h20 v-20 h20 v-20 h20"/>
+    <path d="M1380 620 h30 v-30 h30 v-30 h30"/>
+  </g>
+  <g stroke="#ffc46b" stroke-width="4" stroke-dasharray="10 12" fill="none" opacity="0.7"><path d="M1480 295 H150"/></g>
+  <polygon points="140,295 168,281 168,309" fill="#ffc46b" opacity="0.7"/>
+</svg>
