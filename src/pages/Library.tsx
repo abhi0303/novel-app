@@ -45,7 +45,7 @@ export default function Library() {
     <div className="page">
       <header className="lib-head">
         <div className="brand">
-          <img src="/logo.svg" alt="" width={36} height={36} />
+          <img src={`${import.meta.env.BASE_URL}logo.svg`} alt="" width={36} height={36} />
           <div>
             <div className="brand-name">{t.appName}</div>
             <div className="brand-tag">{t.appTagline}</div>

@@ -32,7 +32,11 @@ To test install and offline mode, run `npm run build && npm run preview`, open t
 
 ### Deploying
 
-`dist/` is a static site. The app uses clean URLs (`/story/...`), so the host must rewrite unknown paths to `/index.html`. Vercel and Netlify do this with a one-line SPA rewrite rule. After the first visit, the service worker handles navigation offline.
+**GitHub Pages (set up):** every push to `main` runs `.github/workflows/deploy.yml`. The workflow builds with `BASE_PATH=/<repo>/` (the site lives at `https://<user>.github.io/<repo>/`) and copies `index.html` to `404.html`. Pages has no SPA rewrites, so that copy is what lets deep links like `/story/...` open the app. One-time setup: **Settings → Pages → Build and deployment → Source: GitHub Actions**. With a custom domain, set `BASE_PATH` to `/` in the workflow.
+
+To check a Pages-style build locally: `BASE_PATH=/novel-app/ npm run build && npm run preview`, then open `http://localhost:4173/novel-app/`.
+
+**Other hosts:** `dist/` is a static site. Build without `BASE_PATH` (served from `/`) and add a rewrite of unknown paths to `/index.html`. Vercel and Netlify each do this with a one-line SPA rule. After the first visit, the service worker handles navigation offline.
 
 ## Project layout
 

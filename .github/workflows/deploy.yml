@@ -24,14 +24,18 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version-file: .nvmrc
           cache: npm
 
       - run: npm ci
 
-      # base comes from vite.config.ts, which defaults to /novel-app/.
-      # A custom domain serves from the root instead: set BASE_PATH to /.
+      # Pages serves the site from /<repo>/. With a custom domain, set BASE_PATH to /.
       - run: npm run build
+        env:
+          BASE_PATH: /${{ github.event.repository.name }}/
+
+      # Pages has no SPA rewrites: serve the app for deep links like /story/... too.
+      - run: cp dist/index.html dist/404.html
 
       - uses: actions/configure-pages@v5
 
