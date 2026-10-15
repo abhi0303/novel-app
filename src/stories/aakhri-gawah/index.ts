@@ -275,7 +275,7 @@ const story: StoryMeta = {
   cover: scenes['cover'],
   coverPosition: '50% 47%',
   poster: scenes['cover'],
-  readingMinutes: 280,
+  readingMinutes: 225,
   parts,
   chapters,
   clues,

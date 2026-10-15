@@ -78,7 +78,7 @@ also has one. Lane-entry CCTV (residents' association) covers the lane only at t
 | 7:58 PM | Vivek's car exits the lane. | Lane CCTV |
 | 7:56–8:06 PM | Rahul turns Pari's frame face down; wipes the trophy with his handkerchief and sets it back; takes the "Mohan — Dec" envelope and leaves the drawer open; washes his hands at the garden tap (leaves it dripping); swaps the bloody hoodie for the navy sweater; padlocks the back gate; walks the green belt to the riverfront. | Confession; garden-tap blood traces; dripping tap |
 | ~8:15 PM | Hoodie and handkerchief go into a municipal bin at the riverfront parking. The bins are emptied the next morning. | Confession; not recovered |
-| 8:14 PM | Nandita exits the mall parking (UPI ₹40). | Bank statement, mall CCTV |
+| 8:14 PM | Nandita exits the mall parking (FASTag debit ₹40 at 20:14:37). Her phone was switched off from 7:16, so there is no tower trail. | FASTag statement, mall number-plate camera (entry 19:41:12), basement CCTV |
 | 8:21 PM | Mohan at Lalla's Dhaba, Aminabad (UPI ₹180) with Sukhiya; two quarters of liquor. | UPI, owner, Sukhiya |
 | **8:38–8:40 PM** | Nandita: lane CCTV 8:38, doorbell 8:39:40. Finds Rajiv dead and the drawer open. | CCTV; doorbell |
 | 8:44 PM | Nandita calls 112. 8:47 she calls Vivek. 8:55 she calls Rahul ("Aditya ke ghar hoon"). | CDRs |
@@ -103,7 +103,7 @@ also has one. Lane-entry CCTV (residents' association) covers the lane only at t
 | Fri 12 | 10 | Pari's third barsi at Nani's. Pari's personality; suicide acknowledged sensitively; the three-knock code ("main theek hoon"). Dev keeps the chain in his pocket. |
 | Sat 13 | 11 | The Vermas: Rahul never came; the 9:14 AM cover request; society register; Rahul's tower data; hoodie vs sweater; back-gate key; salary-day knowledge. |
 | Sun 14 | 12–13 | The terrace at Aliganj. The chain falls to the floor. Confrontation. "Maine hi unhe maara." Full confession. Rahul hands over the unopened envelope. |
-| 15–20 Dec | 14 | Dev withholds the confession. Kabir objects. Formal review: Nandita's bank UPI (mall parking 20:14) + mall CCTV → released on bond as the evidence is deficient (18 Dec); later discharged. DCP; inquiry into the wrongful arrest; Dev moved off the case. Kabir: "Silence also has a price." |
+| 15–20 Dec | 14 | Dev withholds the confession. Kabir objects. Formal review: Nandita's FASTag debit (mall parking 20:14) + mall entry camera + basement CCTV → released on a personal bond as the evidence is deficient (18 Dec); discharged in March. Rahul is questioned formally (SI Rekha Pal, SJPU, Sharda present) and lies in part ("sat on the bench, couldn't go in; left the hoodie on the steps"). Tripathi suspects, but there is no evidence. The DCP orders an inquiry; Dev is taken off the case (Inspector Rawat) and gets a censure entry. Kabir goes to EOW: "Silence also has a price." DCP; inquiry into the wrongful arrest; Dev moved off the case. Kabir: "Silence also has a price." |
 | ~24 Dec | 15 | Sharda's confession about Pari's plea; she hands over the notebook. |
 | 26 Dec → March | 16 | The notebook. Dev removes the last page before giving the notebook to Rahul. He pays Mohan ₹10,000 from his own pocket (the original envelope stays in Dev's drawer, unlogged). Kabir's transfer. March: untraced final report. |
 
@@ -122,7 +122,7 @@ also has one. Lane-entry CCTV (residents' association) covers the lane only at t
 |---|---|---|---|
 | Vivek | Debt, a threat in the lobby, a false café alibi, his car in the lane at 7:51–7:58 | Fear: being at the house in the murder window | Doorbell: he rang, called and never entered. The lane CCTV gives no time to go round the back. He phoned the victim. |
 | Mohan | Past theft, his salary envelope missing, absent 6:30–9:15, a gold chain hidden in his trunk | Drinking (forbidden) and a gold chain in a known thief's trunk on a robbery night | Jeweller at 7:42 (receipt, CCTV, SMS), dhaba UPI at 8:21. Aminabad is 35–45 minutes from Gomti Nagar. |
-| Nandita | Hid the 7:12 call, lied about leaving the bank at 8:15 (it was 7:31), unexplained 67 minutes, lies about the abuse, insurance nominee, has a back-gate key, her prints on the drawer pull | Complicity in silence: she stayed away on purpose because Rajiv said he would "deal with Rahul" | Mall parking 7:41–8:14 (UPI and CCTV), then a 25-minute drive to an 8:38 arrival. No window for the murder. |
+| Nandita | Hid the 7:12 call, lied about leaving the bank at 8:15 (it was 7:31), unexplained 67 minutes, lies about the abuse, insurance nominee, has a back-gate key, her prints on the drawer pull | Complicity in silence: she stayed away on purpose because Rajiv said he would "deal with Rahul"; she switched her phone off "so that if Rahul rang I wouldn't have to not answer" | Crown Mall basement 7:41–8:14 (FASTag, entry camera, CCTV of her sitting alone in the car), then a 24-minute drive to an 8:38 arrival. No window for the murder. |
 | Sharda | Guarded; hides something | Pari's plea and her own failure | She was never a suspect for the murder; she was home in Aliganj with her tuition girls until 7 PM, then alone. Her secret is about Pari. |
 
 ## 7. Clues pointing to Rahul, in the order they appear
@@ -156,3 +156,13 @@ also has one. Lane-entry CCTV (residents' association) covers the lane only at t
 - Three dots drawn in a row: "Our code. Thak thak thak = main theek hoon."
 - Gajar the bunny's "biodata".
 - The last written page: "Nani ne kaha Papa promise karenge. Main wait karungi. — 19/11"
+
+## 10. Endgame details (as written in Chapters 14–16)
+
+- **The knock:** after the confession, Rahul knocks three times on the barsati wall; Dev knocks back on the stairwell. Sharda hears it, and that is why she trusts Dev. From then on she knocks back at night from her side of Pari's wall, and Rahul knows it is her.
+- **Sharda's account (Ch15):** 19 Nov (a Sunday), gajar ka halwa; Pari: "Nani, mujhe apne paas rakh lo… Main roungi bhi nahi." Next morning Rajiv weeps, promises "on Anjali's name", then threatens custody and "never see them again". Three more Sundays (26, 3, 10); she never asks. At the cremation Rajiv says: "Exam pressure… You still have Rahul. Sundays."
+- **What Dev does with the truth:** Rajiv was *not* lying when he told Rahul that Nani knew. Dev cuts out the last page with a blade and picks the paper teeth out of the spiral. To Rahul's "Is this all of it?" he says "That's what your Nani had." To "Was he lying about Nani?" he says "Your Nani loves you more than anyone alive."
+- **Mohan:** in Barabanki, Dev gives him ₹10,000 in a brown envelope with new notes. "Sahab's envelope was always white." Mohan does not ask. The money goes to Guddi's fees.
+- **Kabir:** Sana reports Ayaan to Childline (1098); in January the CWC orders counselling and supervision. Kabir and Sana marry on 12 Feb, and Dev stands at the back.
+- **March:** Inspector Rawat's final report (untraced) is accepted; Nandita is discharged; the foundation cancels "Suno". In Dev's drawer: the blue medal box, the sealed white envelope and the folded last page.
+- **Last line:** "It is never the first witness, Dev thought, who decides what the world will hear. It is always the last."
