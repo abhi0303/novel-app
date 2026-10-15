@@ -1,5 +1,8 @@
 import { Link } from 'react-router-dom'
 import { stories } from '../stories'
+import { games } from '../games'
+import type { GameMeta } from '../games/types'
+import { useGameSave } from '../games/engine'
 import { useT } from '../i18n/strings'
 import { useSettings } from '../state/settings'
 import { useProgress } from '../state/progress'
@@ -39,6 +42,32 @@ function StoryCard({ story }: { story: StoryMeta }) {
   )
 }
 
+function GameCard({ game }: { game: GameMeta }) {
+  const t = useT()
+  const { lang } = useSettings()
+  const save = useGameSave(game)
+  return (
+    <Link to={`/game/${game.id}`} className="story-card game-card">
+      <img src={game.cover} alt="" className="story-card-cover" style={{ objectPosition: game.coverPosition }} />
+      <div className="story-card-body">
+        <div className="chips">
+          <span className="chip chip-accent">{t.interactive}</span>
+          {game.genres.map((g) => (
+            <span key={g.en} className="chip">
+              {g[lang]}
+            </span>
+          ))}
+        </div>
+        <h2>{game.title[lang]}</h2>
+        <p className="muted">{game.tagline[lang]}</p>
+        <div className="meta-line">
+          {game.acts.length} {t.actsCount} · ~{Math.round(game.minutes / 60)} h · {t.endingsFound(save.endings.length, game.endings.length)}
+        </div>
+      </div>
+    </Link>
+  )
+}
+
 export default function Library() {
   const t = useT()
   return (
@@ -60,6 +89,14 @@ export default function Library() {
       <main className="container">
         <h1 className="lib-title">{t.library}</h1>
         <p className="muted lib-intro">{t.libraryIntro}</p>
+        <h2 className="section-title">{t.games}</h2>
+        <p className="muted lib-intro">{t.gamesIntro}</p>
+        <div className="story-grid">
+          {games.map((g) => (
+            <GameCard key={g.id} game={g} />
+          ))}
+        </div>
+        <h2 className="section-title">{t.stories}</h2>
         <div className="story-grid">
           {stories.map((s) => (
             <StoryCard key={s.id} story={s} />

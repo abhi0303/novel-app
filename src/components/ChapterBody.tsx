@@ -33,7 +33,10 @@ export function SceneFigure({ src, caption, eager }: { src?: string; caption?: s
   )
 }
 
-export function ClueCard({ story, id, lang }: { story: StoryMeta; id: string; lang: Lang }) {
+/** The parts of a story that chapter text needs; games pass their own images and no clues. */
+export type ProseSource = Pick<StoryMeta, 'scenes' | 'clues'>
+
+export function ClueCard({ story, id, lang }: { story: ProseSource; id: string; lang: Lang }) {
   const t = useT()
   const index = story.clues.findIndex((c) => c.id === id)
   if (index === -1) return null
@@ -49,7 +52,7 @@ export function ClueCard({ story, id, lang }: { story: StoryMeta; id: string; la
   )
 }
 
-export default function ChapterBody({ blocks, story, lang }: { blocks: Block[]; story: StoryMeta; lang: Lang }) {
+export default function ChapterBody({ blocks, story, lang }: { blocks: Block[]; story: ProseSource; lang: Lang }) {
   return (
     <div className="prose">
       {blocks.map((b, i) => {

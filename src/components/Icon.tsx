@@ -10,6 +10,9 @@ const PATHS = {
   download: 'M12 4v11m0 0l-4-4m4 4l4-4M5 20h14',
   close: 'M6 6l12 12M18 6L6 18',
   search: 'M11 18a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm9 3l-4.5-4.5',
+  case: 'M4 8h16v11H4zM9 8V5h6v3M4 13h16',
+  rewind: 'M11 18l-6-6 6-6M19 18l-6-6 6-6',
+  person: 'M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm-7 9a7 7 0 0 1 14 0',
 } as const
 
 export type IconName = keyof typeof PATHS
