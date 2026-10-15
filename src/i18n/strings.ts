@@ -1,4 +1,4 @@
-import type { Lang } from '../stories/types'
+import type { CharacterTag, Lang } from '../stories/types'
 import { useSettings } from '../state/settings'
 
 const en = {
@@ -22,6 +22,25 @@ const en = {
   claim: 'Their statement',
   noClues: 'No clues yet. Begin the investigation.',
   lockedClues: (n: number) => `${n} more clue${n === 1 ? '' : 's'} still hidden in the story`,
+  whosWho: "Who's who",
+  whosWhoIntro:
+    "Everyone you have met so far, and what you have learned about them. New people appear as you read. Nothing from chapters you haven't reached is shown.",
+  firstMet: (chapter: string) => `First met in ${chapter}`,
+  sinceThen: 'What you learned later',
+  othersMet: 'Others you have met',
+  unmetPeople: (n: number) => `${n} more ${n === 1 ? 'person appears' : 'people appear'} later in the story`,
+  noPeopleYet: 'Start reading to meet the people in this story.',
+  tagLabels: {
+    lead: 'Main character',
+    victim: 'Victim',
+    missing: 'Missing',
+    suspect: 'Suspect',
+    culprit: 'Culprit',
+    investigator: 'Investigating',
+    witness: 'Witness',
+    family: 'Family',
+    other: 'Other',
+  } as Record<CharacterTag, string>,
   prev: 'Previous',
   next: 'Next chapter',
   backToStory: 'Contents',
@@ -138,6 +157,25 @@ const hi: Strings = {
   claim: 'Unka bayan',
   noClues: 'Abhi koi clue nahi. Investigation shuru kijiye.',
   lockedClues: (n: number) => `${n} clue abhi kahani mein chhupe hain`,
+  whosWho: 'Kaun kaun hai',
+  whosWhoIntro:
+    'Ab tak jin logon se aap mile, aur unke baare mein jo pata chala. Padhte-padhte naye log judte jaayenge. Jo adhyay aapne abhi nahi padhe, unka kuch nahi dikhaya jaata.',
+  firstMet: (chapter: string) => `Pehli baar: ${chapter}`,
+  sinceThen: 'Baad mein kya pata chala',
+  othersMet: 'Aur log jinse aap mile',
+  unmetPeople: (n: number) => `Kahani mein aage ${n} aur log aayenge`,
+  noPeopleYet: 'Kahani padhna shuru kijiye. Jinse aap milenge, woh yahan judte jaayenge.',
+  tagLabels: {
+    lead: 'Mukhya kirdaar',
+    victim: 'Victim',
+    missing: 'Laapata',
+    suspect: 'Suspect',
+    culprit: 'Mujrim',
+    investigator: 'Jaanch karne wale',
+    witness: 'Gawah',
+    family: 'Parivaar',
+    other: 'Anya',
+  },
   prev: 'Pichhla',
   next: 'Agla adhyay',
   backToStory: 'Vishay suchi',

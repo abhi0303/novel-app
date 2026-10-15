@@ -1,12 +1,16 @@
 import { useState } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { Link, useParams, useSearchParams } from 'react-router-dom'
 import { getStory } from '../stories'
 import { useT } from '../i18n/strings'
 import { useSettings } from '../state/settings'
 import { useProgress } from '../state/progress'
 import LangToggle from '../components/LangToggle'
 import Icon from '../components/Icon'
+import { WhosWhoList } from '../components/WhosWho'
 import NotFound from './NotFound'
+
+const TABS = ['clues', 'people', 'suspects'] as const
+type Tab = (typeof TABS)[number]
 
 export default function Notebook() {
   const { storyId } = useParams()
@@ -14,7 +18,8 @@ export default function Notebook() {
   const t = useT()
   const { lang } = useSettings()
   const progress = useProgress(story?.id ?? '')
-  const [tab, setTab] = useState<'clues' | 'suspects'>('clues')
+  const [params] = useSearchParams()
+  const [tab, setTab] = useState<Tab>(() => (TABS.includes(params.get('tab') as Tab) ? (params.get('tab') as Tab) : 'clues'))
   if (!story) return <NotFound />
 
   const chapterIndex = (id: string) => story.chapters.findIndex((c) => c.id === id)
@@ -40,7 +45,10 @@ export default function Notebook() {
 
         <div className="seg seg-wide" role="tablist">
           <button role="tab" aria-selected={tab === 'clues'} className={tab === 'clues' ? 'seg-on' : ''} onClick={() => setTab('clues')}>
-            {t.clues} ({unlocked.length})
+            {t.clues} <span className="cb-n">{unlocked.length}</span>
+          </button>
+          <button role="tab" aria-selected={tab === 'people'} className={tab === 'people' ? 'seg-on' : ''} onClick={() => setTab('people')}>
+            {t.whosWho}
           </button>
           <button
             role="tab"
@@ -48,7 +56,7 @@ export default function Notebook() {
             className={tab === 'suspects' ? 'seg-on' : ''}
             onClick={() => setTab('suspects')}
           >
-            {t.suspects} ({story.suspects.length})
+            {t.suspects} <span className="cb-n">{story.suspects.length}</span>
           </button>
         </div>
 
@@ -74,6 +82,13 @@ export default function Notebook() {
               </div>
             )}
           </div>
+        )}
+
+        {tab === 'people' && (
+          <>
+            <p className="muted who-intro">{t.whosWhoIntro}</p>
+            <WhosWhoList story={story} lang={lang} />
+          </>
         )}
 
         {tab === 'suspects' && (

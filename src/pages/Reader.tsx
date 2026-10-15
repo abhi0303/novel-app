@@ -8,6 +8,7 @@ import { updateProgress, useProgress } from '../state/progress'
 import ChapterBody, { SceneFigure } from '../components/ChapterBody'
 import { GuessGate, GuessResult } from '../components/Guess'
 import SettingsSheet from '../components/SettingsSheet'
+import WhosWhoSheet from '../components/WhosWho'
 import LangToggle from '../components/LangToggle'
 import Icon from '../components/Icon'
 import NotFound from './NotFound'
@@ -27,6 +28,7 @@ export default function Reader() {
   const progress = useProgress(story?.id ?? '')
   const [loaded, setLoaded] = useState<Loaded | null>(null)
   const [showSettings, setShowSettings] = useState(false)
+  const [showPeople, setShowPeople] = useState(false)
   const barRef = useRef<HTMLSpanElement>(null)
   const ratioRef = useRef(0)
   const pendingScroll = useRef<number | null>(null)
@@ -124,6 +126,9 @@ export default function Reader() {
           <span className="topbar-name">{chapter.title[lang]}</span>
         </div>
         <LangToggle />
+        <button className="icon-btn" onClick={() => setShowPeople(true)} aria-label={t.whosWho} title={t.whosWho}>
+          <Icon name="people" />
+        </button>
         <button className="icon-btn" onClick={() => setShowSettings(true)} aria-label={t.settings}>
           <Icon name="text" />
         </button>
@@ -182,6 +187,7 @@ export default function Reader() {
       </article>
 
       {showSettings && <SettingsSheet onClose={() => setShowSettings(false)} />}
+      {showPeople && <WhosWhoSheet story={story} lang={lang} onClose={() => setShowPeople(false)} />}
     </div>
   )
 }

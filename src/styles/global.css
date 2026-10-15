@@ -11,6 +11,9 @@
   --accent: #e0a043;
   --accent-ink: #1a1206;
   --red: #d2453a;
+  --blue: #86b6ea;
+  --green: #84c79f;
+  --purple: #bba2ea;
   --paper: #efe4cc;
   --paper-ink: #2b2219;
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
@@ -29,6 +32,9 @@
   --accent: #9c5b12;
   --accent-ink: #fff8ec;
   --red: #a3271c;
+  --blue: #2c5b93;
+  --green: #2a6b48;
+  --purple: #5f429a;
   --paper: #fffaf0;
   --paper-ink: #2b2219;
   --shadow: 0 8px 24px rgba(80, 60, 30, 0.15);
@@ -214,8 +220,9 @@ button {
 
 .seg-wide button {
   flex: 1;
-  padding: 9px 12px;
+  padding: 9px 8px;
   font-size: 0.9rem;
+  white-space: nowrap;
 }
 
 .chips {
@@ -1694,4 +1701,187 @@ a.story-card:hover {
 
 .game-card .story-card-cover {
   aspect-ratio: 16 / 9;
+}
+
+/* ---------- Who's who ---------- */
+
+.who-intro {
+  font-size: 0.9rem;
+  margin: 6px 0 14px;
+}
+
+.who-list {
+  display: grid;
+  gap: 12px;
+}
+
+.who {
+  --tag: var(--muted);
+  display: grid;
+  grid-template-columns: 46px 1fr;
+  gap: 12px;
+  padding: 14px;
+  border-radius: 12px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--tag);
+}
+
+.tag-lead { --tag: var(--accent); }
+.tag-victim,
+.tag-culprit { --tag: var(--red); }
+.tag-missing { --tag: var(--purple); }
+.tag-suspect { --tag: var(--accent); }
+.tag-investigator { --tag: var(--blue); }
+.tag-family { --tag: var(--green); }
+.tag-witness,
+.tag-other { --tag: var(--muted); }
+
+.who-avatar {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 0.95rem;
+  background: var(--surface-2);
+  color: var(--tag);
+  border: 1px solid var(--line);
+}
+
+.who-body {
+  min-width: 0;
+  font-family: var(--sans);
+}
+
+.who-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 10px;
+}
+
+.who h3 {
+  font-family: var(--display);
+  font-size: 1.12rem;
+  margin: 0;
+  color: var(--text);
+}
+
+.who-tag {
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--tag);
+  border: 1px solid var(--tag);
+  border-radius: 999px;
+  padding: 1px 8px;
+  white-space: nowrap;
+}
+
+.tag-culprit .who-tag {
+  background: var(--red);
+  color: #fff;
+}
+
+.who-job {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-top: 3px;
+}
+
+.who-rel {
+  margin: 8px 0 0;
+  font-size: 0.92rem;
+  line-height: 1.5;
+  color: var(--text-2);
+}
+
+.who-later {
+  margin-top: 10px;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.who-notes {
+  list-style: none;
+  margin: 4px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 6px;
+}
+
+.who-notes li {
+  font-size: 0.88rem;
+  line-height: 1.45;
+  color: var(--text-2);
+  padding-left: 10px;
+  border-left: 2px solid var(--line);
+}
+
+.who-when {
+  display: block;
+  font-size: 0.72rem;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.who-first {
+  margin-top: 8px;
+  font-size: 0.74rem;
+  color: var(--muted);
+}
+
+.who-sub {
+  font-family: var(--display);
+  font-size: 1.1rem;
+  margin: 26px 0 8px;
+}
+
+.who-minor-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.who-minor {
+  --tag: var(--muted);
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--tag);
+  font-family: var(--sans);
+}
+
+.who-minor-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 2px 8px;
+}
+
+.who-minor-head .who-job {
+  margin: 0;
+}
+
+.who-minor p {
+  margin: 4px 0 0;
+  font-size: 0.86rem;
+  line-height: 1.45;
+  color: var(--text-2);
+}
+
+.whoswho .clue-locked {
+  margin-top: 16px;
+}
+
+.sheet-wide {
+  max-width: 40rem;
 }

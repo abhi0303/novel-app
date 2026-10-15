@@ -77,6 +77,9 @@ export default function StoryHome() {
           <Link className="btn btn-ghost btn-big" to={`/story/${story.id}/notebook`}>
             <Icon name="note" size={18} /> {t.notebook}
           </Link>
+          <Link className="btn btn-ghost btn-big" to={`/story/${story.id}/notebook?tab=people`}>
+            <Icon name="people" size={18} /> {t.whosWho}
+          </Link>
         </div>
 
         <div className="meta-line">

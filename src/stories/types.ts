@@ -38,6 +38,32 @@ export interface Suspect {
   claim: Localized
 }
 
+/** How a character stands in the case. A later note can change it (e.g. when someone becomes a suspect). */
+export type CharacterTag = 'lead' | 'victim' | 'missing' | 'suspect' | 'culprit' | 'investigator' | 'witness' | 'family' | 'other'
+
+export interface CharacterNote {
+  /** Shown once this chapter has been read to the end (or a later chapter opened), so twists never leak early. */
+  chapterId: string
+  text: Localized
+  tag?: CharacterTag
+}
+
+export interface Character {
+  id: string
+  name: string
+  /** Chapter where the reader first meets them. The card appears once that chapter is opened. */
+  chapterId: string
+  tag: CharacterTag
+  /** What they do, with their age where the story gives it. */
+  profession: Localized
+  /** Who they are to the case and to the others, as known when they first appear. */
+  relation: Localized
+  /** What the reader learns about them later, in story order. */
+  later?: CharacterNote[]
+  /** Background people, listed separately after the main cast. */
+  minor?: boolean
+}
+
 export interface GuessGate {
   /** The reader is asked for a guess before opening this chapter. */
   beforeChapterId: string
@@ -71,6 +97,8 @@ export interface StoryMeta {
   chapters: Chapter[]
   clues: Clue[]
   suspects: Suspect[]
+  /** Everyone the reader meets, revealed chapter by chapter in the "Who's who" list. */
+  characters: Character[]
   guess?: GuessGate
   /** Scene illustration urls keyed by id. */
   scenes: Record<string, string>

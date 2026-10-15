@@ -1,4 +1,5 @@
 import type { Chapter, Clue, Lang, Localized, Part, StoryMeta, Suspect } from '../types'
+import characters from './characters'
 
 const sceneUrls = import.meta.glob<string>('./scenes/*.{svg,webp,png,jpg}', { eager: true, query: '?url', import: 'default' })
 const scenes = Object.fromEntries(
@@ -324,6 +325,7 @@ const story: StoryMeta = {
   chapters,
   clues,
   suspects,
+  characters,
   guess: {
     beforeChapterId: 'ch21',
     revealAfterChapterId: 'ch22',
