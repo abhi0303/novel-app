@@ -49,6 +49,9 @@ export interface GuessGate {
   options: { id: string; label: string }[]
   /** base64 of the correct option id, so the answer isn't readable at a glance in the source. */
   answer: string
+  /** Optional story-specific result lines; the generic UI strings are used otherwise. */
+  right?: Localized
+  wrong?: Localized
 }
 
 export interface StoryMeta {

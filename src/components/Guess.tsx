@@ -2,10 +2,11 @@ import { useState } from 'react'
 import type { Lang, StoryMeta } from '../stories/types'
 import { useT } from '../i18n/strings'
 import { updateProgress, useProgress } from '../state/progress'
+import { useSettings } from '../state/settings'
 
 const SKIPPED = '__skipped__'
 
-/** Asks the reader to name the killer before the final confrontation. */
+/** Asks the reader for a guess before the story's big reveal. */
 export function GuessGate({ story, lang }: { story: StoryMeta; lang: Lang }) {
   const t = useT()
   const [pick, setPick] = useState<string | null>(null)
@@ -44,6 +45,7 @@ export function GuessGate({ story, lang }: { story: StoryMeta; lang: Lang }) {
 
 export function GuessResult({ story }: { story: StoryMeta }) {
   const t = useT()
+  const { lang } = useSettings()
   const { guess } = useProgress(story.id)
   const gate = story.guess
   if (!gate || !guess) return null
@@ -55,7 +57,7 @@ export function GuessResult({ story }: { story: StoryMeta }) {
       <div className="guess-kicker">
         {t.guessLocked}: <strong>{label}</strong>
       </div>
-      <p>{correct ? t.guessRight : t.guessWrong}</p>
+      <p>{correct ? (gate.right?.[lang] ?? t.guessRight) : (gate.wrong?.[lang] ?? t.guessWrong)}</p>
     </section>
   )
 }
