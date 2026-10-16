@@ -13,6 +13,9 @@ const PATHS = {
   case: 'M4 8h16v11H4zM9 8V5h6v3M4 13h16',
   rewind: 'M11 18l-6-6 6-6M19 18l-6-6 6-6',
   person: 'M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm-7 9a7 7 0 0 1 14 0',
+  bookmark: 'M7 3h10v18l-5-4-5 4z',
+  highlight: 'M4 21h9M14.5 4.5l5 5L11 18H6v-5z',
+  underline: 'M7 4v7a5 5 0 0 0 10 0V4M5 20h14',
   people: 'M9 11a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM3 20a6 6 0 0 1 12 0M16 4.3a3.5 3.5 0 0 1 0 6.4M18 14.4a6 6 0 0 1 3 5.6',
 } as const
 

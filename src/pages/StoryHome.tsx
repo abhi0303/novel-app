@@ -82,6 +82,20 @@ export default function StoryHome() {
           </Link>
         </div>
 
+        {progress.mark && (() => {
+          const ch = story.chapters.find((c) => c.id === progress.mark!.chapterId)
+          return ch ? (
+            <Link className="marker-card" to={`/story/${story.id}/read/${ch.id}`}>
+              <Icon name="bookmark" size={20} />
+              <span>
+                <span className="marker-card-label">
+                  {t.yourMarker} · {t.markerOn(ch.label[lang])}
+                </span>
+                <span className="marker-card-text">“{progress.mark.text}”</span>
+              </span>
+            </Link>
+          ) : null
+        })()}
         <div className="meta-line">
           {t.readProgress(progress.finished.length, story.chapters.length)}
         </div>
