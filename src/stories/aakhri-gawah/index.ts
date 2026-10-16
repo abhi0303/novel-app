@@ -1,5 +1,9 @@
 import type { Chapter, Clue, Lang, Localized, Part, StoryMeta, Suspect } from '../types'
-import characters from './characters'
+import cast from './characters'
+
+// Face crops of characters who appear in the story's art, named by character id.
+const portraitUrls = import.meta.glob<string>('./portraits/*.webp', { eager: true, query: '?url', import: 'default' })
+const characters = cast.map((c) => ({ ...c, photo: portraitUrls[`./portraits/${c.id}.webp`] }))
 
 const sceneUrls = import.meta.glob<string>('./scenes/*.{svg,webp,png,jpg}', { eager: true, query: '?url', import: 'default' })
 const scenes = Object.fromEntries(

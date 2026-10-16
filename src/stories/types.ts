@@ -62,6 +62,8 @@ export interface Character {
   later?: CharacterNote[]
   /** Background people, listed separately after the main cast. */
   minor?: boolean
+  /** Face crop from the story's own art, so the card shows the same person as the scenes. Filled in from portraits/<id>.webp. */
+  photo?: string
 }
 
 export interface GuessGate {

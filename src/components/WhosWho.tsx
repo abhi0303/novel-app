@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { useT } from '../i18n/strings'
 import { useProgress } from '../state/progress'
 import { knownCharacters, type KnownCharacter } from '../stories/whoswho'
@@ -18,15 +18,44 @@ function initials(name: string) {
     .toUpperCase()
 }
 
+/** A larger view of a character's photo, opened by tapping it. */
+function PhotoView({ name, src, onClose }: { name: string; src: string; onClose: () => void }) {
+  const t = useT()
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => e.key === 'Escape' && onClose()
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [onClose])
+  return (
+    <div className="who-photo-view" role="dialog" aria-modal="true" aria-label={name} onClick={onClose}>
+      <figure>
+        <img src={src} alt={name} />
+        <figcaption>{name}</figcaption>
+      </figure>
+      <button className="icon-btn" aria-label={t.close}>
+        <Icon name="close" />
+      </button>
+    </div>
+  )
+}
+
 function Card({ known, story, lang }: { known: KnownCharacter; story: StoryMeta; lang: Lang }) {
   const t = useT()
+  const [zoom, setZoom] = useState(false)
   const { character: c, tag, notes } = known
   const label = (id: string) => story.chapters.find((ch) => ch.id === id)?.label[lang] ?? ''
   return (
     <article className={`who tag-${tag}`}>
-      <div className="who-avatar" aria-hidden="true">
-        {initials(c.name)}
-      </div>
+      {c.photo ? (
+        <button className="who-avatar who-photo" onClick={() => setZoom(true)} aria-label={`${t.viewPhoto}: ${c.name}`}>
+          <img src={c.photo} alt="" loading="lazy" />
+        </button>
+      ) : (
+        <div className="who-avatar" aria-hidden="true">
+          {initials(c.name)}
+        </div>
+      )}
+      {zoom && c.photo && <PhotoView name={c.name} src={c.photo} onClose={() => setZoom(false)} />}
       <div className="who-body">
         <div className="who-top">
           <h3>{c.name}</h3>

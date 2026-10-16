@@ -38,6 +38,7 @@ const en = {
     'Select any word or line to highlight or underline it, or tap the ribbon to mark the paragraph you are on. You keep one marker per story. It stays until you open a different chapter.',
   markerOn: (chapter: string) => `In ${chapter}`,
   whosWho: "Who's who",
+  viewPhoto: 'View photo',
   whosWhoIntro:
     "Everyone you have met so far, and what you have learned about them. New people appear as you read. Nothing from chapters you haven't reached is shown.",
   firstMet: (chapter: string) => `First met in ${chapter}`,
@@ -188,6 +189,7 @@ const hi: Strings = {
     'Kisi bhi shabd ya line ko select karke highlight ya underline kijiye, ya ribbon dabaakar jis paragraph par hain use mark kijiye. Har kahani mein ek nishaan rehta hai, jo doosra adhyay kholne tak bana rehta hai.',
   markerOn: (chapter: string) => `${chapter} mein`,
   whosWho: 'Kaun kaun hai',
+  viewPhoto: 'Tasveer dekhein',
   whosWhoIntro:
     'Ab tak jin logon se aap mile, aur unke baare mein jo pata chala. Padhte-padhte naye log judte jaayenge. Jo adhyay aapne abhi nahi padhe, unka kuch nahi dikhaya jaata.',
   firstMet: (chapter: string) => `Pehli baar: ${chapter}`,
