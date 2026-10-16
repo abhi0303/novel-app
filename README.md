@@ -10,12 +10,12 @@ Three novels are included:
 
 - **Smriti / Jo Yaad Nahi Tha**: a psychological mystery about memory. A Jaipur psychologist receives a cassette from a woman who vanished seven years earlier from a research institute in the Uttarakhand hills. It has 16 chapters in four parts (about 56,000 words per language) and anime-style scene art generated for the story.
 - **Aakhri Gawah / The Last Witness**: a murder in a respected Lucknow family. It has 16 chapters in four parts (about 51,000 words per language) and anime-style scene art taken from the story's poster.
-- **Kamra Number 7 / Room Number 7**: a locked-room murder in Mussoorie, told in a prologue, 22 chapters and an epilogue (about 37,500 words per language), with 30 hand-drawn SVG illustrations.
+- **Kamra Number 7 / Room Number 7**: a locked-room murder in Mussoorie, told in a prologue, 22 chapters and an epilogue (about 37,500 words per language), with 30 realistic cinematic scene images.
 
 ## Features
 
 - **Two languages, one switch.** EN/HI toggle in every header, remembered between visits.
-- **Illustrated scenes.** Every chapter opens with a scene, and key moments have inline illustrations. Kamra Number 7 uses hand-drawn SVGs. Aakhri Gawah uses anime artwork as WebP (crops of its poster; see the prompt pack below to replace them). A story can also show a portrait **poster** on its home page.
+- **Illustrated scenes.** Every chapter opens with a scene, and key moments have inline illustrations. Kamra Number 7 uses realistic cinematic images, with each character kept the same from picture to picture. Aakhri Gawah uses anime artwork as WebP (crops of its poster; see the prompt pack below to replace them). A story can also show a portrait **poster** on its home page.
 - **Detective's notebook.** Clues unlock as you read. It also has a suspect board taken from the opening chapters, so nothing is spoiled.
 - **Who's who.** A list of every character the reader has met so far: name, what they do, and how they are connected to the case, plus what the reader has learned about them since, chapter by chapter. It helps readers who come back after a few days, or who find names hard to keep track of. Open it from the people icon while reading, or from the story page and the notebook. A person appears once the chapter that introduces them is opened. Later facts, including who the culprit is, appear only after their chapter has been read to the end, so a twist never shows up before the reader reaches it.
 - **Guess the killer.** Before the final confrontation the reader locks in a guess (or skips). The result appears after the reveal.
@@ -79,8 +79,9 @@ src/
       index.ts                 metadata: parts, chapters, clues, suspects, guess gate
       content/en/*.md          English chapters
       content/hi/*.md          Hindi (Hinglish) chapters
-      scenes/*.svg             illustrations (cover.svg is the story cover)
+      scenes/*.webp            realistic scene images (cover.webp is the story cover)
 docs/kamra-number-7/SOLUTION_BIBLE.md   ⚠️ full solution and timeline (spoilers)
+docs/kamra-number-7/IMAGE_PROMPTS.md    how the realistic scene images were made: the fixed look of every character, and the prompt for every scene
 docs/aakhri-gawah/STORY_BIBLE.md        ⚠️ full solution, timeline and continuity ledger (spoilers)
 docs/aakhri-gawah/IMAGE_PROMPTS.md      anime prompt for every scene id, plus how to swap images
 docs/smriti/STORY_BIBLE.md              ⚠️ full solution, both twists, clue ledger, timelines (spoilers)
@@ -91,7 +92,7 @@ docs/neelkanth/IMAGE_PROMPTS.md         the prompt for every scene and investiga
 
 ## Adding the next story
 
-1. Copy `src/stories/aakhri-gawah/` (raster art) or `src/stories/kamra-number-7/` (SVG art) to a new folder, for example `src/stories/my-story/`.
+1. Copy an existing story folder, for example `src/stories/aakhri-gawah/`, to a new folder, for example `src/stories/my-story/`.
 2. Edit its `index.ts`: id, titles, blurb, parts, chapters (each chapter needs a `hero` scene), clues, suspects, characters, and optionally `guess`. The `guess.answer` is the base64 of the correct option id, for example `btoa('rohan')`. `guess.right` / `guess.wrong` override the generic result lines.
 3. Write chapters as `content/en/<chapterId>.md` and `content/hi/<chapterId>.md`. If a Hindi file is missing, the reader falls back to English.
 4. Add illustrations to `scenes/` (`.svg`, `.webp`, `.png` or `.jpg`; the file name is the scene id, one file per id). Include a `cover`. For a portrait poster, set `poster` (shown whole on the story page) and `coverPosition` (CSS `object-position` used when the cover is cropped into a wide card). Keep raster images at about 1280×720 WebP so the offline cache stays small (the PWA skips files over 3 MB).
